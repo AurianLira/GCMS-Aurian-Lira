@@ -11,13 +11,12 @@ public class HomeController {
 		return "Hello, World";
 	}
 
-	//meu endpoint 
 	
 	//mais um comentário 
 	
 	@RequestMapping("/aurianlira")
 	public @ResponseBody String greetingFulano() {
-		return "Hello, Aurian Moura de Lira!";
+		return "Hello, Aurian Moura!";
 	}
 
 }
