@@ -33,5 +33,14 @@ class WebAppApplicationTests {
 				.andExpect(content().string(containsString("Hello, Aurian Moura de Lira!")));
 
 	}
+	
+	@Test
+	public void shouldReturnDefaultMessageHotfix2() throws Exception {
+		this.mockMvc.perform(get("/hotfix2"))
+
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(content().string(containsString("Hello, Hotfix 2!")));
+
+	}
 
 }
