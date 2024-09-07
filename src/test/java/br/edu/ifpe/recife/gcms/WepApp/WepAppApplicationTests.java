@@ -27,7 +27,7 @@ class WebAppApplicationTests {
 
 	@Test
 	public void shouldReturnDefaultMessageAurian() throws Exception {
-		this.mockMvc.perform(get("/aurianlira"))
+		this.mockMvc.perform(get("/aurianmoura"))
 
 				.andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("Hello, Aurian Moura de Lira!")));
