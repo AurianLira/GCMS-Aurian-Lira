@@ -15,8 +15,10 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+       container:
+        image: docker://aurianlira/docker-gcms:webapp
+        
     permissions:
       contents: read
 
